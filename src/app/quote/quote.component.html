@@ -1,17 +1,20 @@
 <div class="row">
     <div class="col-md-6">
-        
     <div class="card">
         <div class="col-md-8">
         <div class="card-body" *ngFor='let quote of quotes; let i=index'>
-          <h4 class="card-title">{{ quote.quotetitle}}</h4>
-          <p class="card-text">{{ quote.quote }}</p>
-          <!-- <app-quote-detail [quote]='quote'></app-quote-detail> -->
+            <h4 class="card-title">{{ quote.quotetitle}}</h4>
+            <p class="card-text">{{ quote.quote }}</p>
+            <!-- <app-quote-detail [quote]='quote'></app-quote-detail> -->
         </div>
-      </div>
-      <div class="col-sm-3">
-          <button (click)='toggleDetails(i)'>ReadMore</button>
-      </div>
-    </div>
-    </div>
+        </div>
+        <div class="col-sm-3">
+            <button (click)='toggleDetails(i)'>ReadMore</button>
+            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote'></app-quote-detail>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+            <app-quote-form></app-quote-form>
+        </div>
 </div>
