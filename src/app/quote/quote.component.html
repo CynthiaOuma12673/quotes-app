@@ -1,4 +1,14 @@
-<div class="sub-heading">
-    <h2 *ngFor='let quote of quotes'>{{ quote.quotetitle}}</h2>
-    <app-quote-detail [quote]='quote'></app-quote-detail>
+<div class="row">
+    <div class="col-md-6">
+        
+    <div class="card">
+        <div class="col-md-8">
+        <div class="card-body" *ngFor='let quote of quotes; let i=index'>
+          <h4 class="card-title">{{ quote.quotetitle}}</h4>
+          <p class="card-text">{{ quote.quote }}</p>
+          <!-- <app-quote-detail [quote]='quote'></app-quote-detail> -->
+        </div>
+      </div>
+    </div>
+    </div>
 </div>
