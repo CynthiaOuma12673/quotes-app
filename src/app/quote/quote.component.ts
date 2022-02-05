@@ -13,6 +13,10 @@ export class QuoteComponent implements OnInit {
     new Quote (3, 'Lawrence', 'Motivational', 'The greatest glory in living lies not in never falling but in rising every time we fail', new Date(2022,1,31), 0, 0),
     new Quote (4, 'Namenge', 'Time', 'Time is limited so do not waste it living someone elses life ', new Date(2022,2,4), 0, 0)
   ];
+  toggleDetails(index:any){
+    this.quotes[index].showDescription=!this.quotes[index].showDescription;
+
+  }
 
   constructor() { }
 
