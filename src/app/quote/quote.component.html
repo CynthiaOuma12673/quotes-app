@@ -1,3 +1,4 @@
 <div class="sub-heading">
     <h2 *ngFor='let quote of quotes'>{{ quote.quotetitle}}</h2>
+    <app-quote-detail [quote]='quote'></app-quote-detail>
 </div>
