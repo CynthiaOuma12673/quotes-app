@@ -1,1 +1,6 @@
-<p>{{ quote.quote }}</p>
+<p>{{ quote.quoteBody }}</p>
+<div class="">
+    <button class="btn btn-sm btn-success" (click)='upvote()'>{{quote.upCount}} <i class="fa fa-thumbs-up" id="like"></i></button> 
+    <button class="btn btn-sm hate" id="hate" (click)='downvote()'>{{quote.downCount}} <i class="fa fa-thumbs-down" id="dislike"></i></button> 
+    <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fa fa-trash" id="delete"></i></button> 
+</div>
