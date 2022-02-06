@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 })
 export class QuoteDetailComponent implements OnInit {
   
-  @Input() quote!: Quote;
+  @Input() quoter!: Quote;
   @Output() isComplete= new EventEmitter<boolean>();
-  quoteDelete(complete:boolean){
+  deleteQuote(complete:boolean){
     this.isComplete.emit(complete);
   }
 

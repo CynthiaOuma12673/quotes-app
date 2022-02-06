@@ -17,6 +17,12 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDescription=!this.quotes[index].showDescription;
 
   }
+    // sorting quotes according to date
+  get sortingQuotes() {
+    return this.quotes.sort((a, b) => {
+      return <any>new Date(b.quoteDate) - <any>new Date(a.quoteDate);
+    });
+  }  
 
   //delete btn
   deleteQuote(isComplete:any, index:any){
