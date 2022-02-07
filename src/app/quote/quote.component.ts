@@ -10,8 +10,8 @@ export class QuoteComponent implements OnInit {
   quotes:Quote[] = [
     new Quote (1, 'Cynthia', 'Love', 'I love you for all that you are, all that you have been and all that you will be', 'Cynthia Ouma', new Date(2021,12,3), 0, 0),
     new Quote (2, 'Leone', 'Technology', 'Technology is the best when it brings people together','Bill Gates', new Date(2022,1,1), 0, 0),
-    new Quote (3, 'Lawrence', 'Motivational', 'The greatest glory in living lies not in never falling but in rising every time we fail','Maya Angelou',new Date(2022,1,31), 0, 0),
-    new Quote (4, 'Namenge', 'Time', 'Time is limited so do not waste it living someone elses life ','Robert Chris', new Date(2022,2,4), 0, 0)
+    new Quote (3, 'Lawrence', 'Motivational', 'The greatest glory in living lies not in never falling but in rising every time we fail','Maya Angelou',new Date(2021,3,1), 0, 0),
+    new Quote (4, 'Namenge', 'Time', 'Time is limited so do not waste it living someone elses life ','Robert Chris', new Date(2021,12,12), 0, 0)
   ];
   toggleDetails(index:any){
     this.quotes[index].showDescription=!this.quotes[index].showDescription;
