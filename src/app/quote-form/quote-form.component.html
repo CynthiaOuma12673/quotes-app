@@ -5,21 +5,21 @@
         <form (ngSubmit)='submitQuote()' #quotesForm='ngForm'>
             <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" required class="form-control" id="name" [(ngModel)]="quoting.name" name="name" #name='ngModel' minlength="3">
+            <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' minlength="3">
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>Name is required</p>
             </div>
             </div>
             <div class="form-group">
             <label for="name">Quote Tittle</label>
-            <input type="text" required class="form-control" id="title" [(ngModel)]="quoting.quotetitle" name="title" #title='ngModel'>
+            <input type="text" required class="form-control" id="title" [(ngModel)]="newQuote.quotetitle" name="title" #title='ngModel'>
             <div [hidden]="title.valid || title.pristine" class="alert alert-danger">
                 <p>Quote title is required</p>
             </div>
             </div>
             <div class="form-group">
             <label for="description">Quote</label>
-            <textarea class="form-control" id="quote" rows="2" required [(ngModel)]="quoting.quoteBody" name="quote" #quote='ngModel'></textarea>
+            <textarea class="form-control" id="quote" rows="2" required [(ngModel)]="newQuote.quoteBody" name="quote" #quote='ngModel'></textarea>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
                 <p>Quote is required</p>
             </div>
