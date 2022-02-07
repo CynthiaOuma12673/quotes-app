@@ -1,6 +1,17 @@
-<p>{{ quoter.quoteBody }}</p>
-<div class="">
-    <!-- <button class="btn btn-sm btn-success" (click)='upCount()'>{{quoter.upCount}} <i class="fa fa-thumbs-up" id="like"></i></button> 
-    <button class="btn btn-sm hate" id="hate" (click)='downCount()'>{{quoter.downCount}} <i class="fa fa-thumbs-down" id="dislike"></i></button>  -->
+<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		>
+<div class="row">
+    <div class="col-sm-4">
+    <button class="btn btn-sm btn-success" (click)='(upCounter)'>{{quoter.upCount}} <i class="fa fa-thumbs-up" id="like"></i></button> 
+    </div>
+    <div class="col-sm-4">
+    <button class="btn btn-sm hate" id="hate" (click)='downCounter()'>{{quoter.downCount}} <i class="fa fa-thumbs-down" id="dislike"></i></button>
+    </div> 
+    <div class="col-sm-4">
     <button class="btn btn-sm btn-danger" id="del" (click)='deleteQuote(true)'><i class="fa fa-trash" id="delete"></i></button> 
+    </div>
 </div>
