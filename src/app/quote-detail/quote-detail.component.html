@@ -4,6 +4,9 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		>
+        <div class="">
+            <p>This quote has taken {{quoter.quoteDate|dateCount}} days since it was created</p>
+        </div>
 <div class="row">
     <div class="col-sm-4">
     <button class="btn btn-sm btn-success" (click)='(upCounter)'>{{quoter.upCount}} <i class="fa fa-thumbs-up" id="like"></i></button> 
